@@ -1,0 +1,11 @@
+:root{
+    --img-principal: images/nodos-4;
+}
+
+.header {
+    background-image:var(--img-principal);
+    height: 60rem; /*se le define una altura para que aparezca la imagen*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; /*horizontal y vertical*/
+}
