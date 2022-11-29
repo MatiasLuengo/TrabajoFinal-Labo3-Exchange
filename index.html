@@ -10,6 +10,11 @@
 
     <link rel="preload" href="styles/styles.css" as="style">
     <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -17,7 +22,7 @@
 
         <div class="nav-bg">
 
-            <div class="contenedor">
+            <div class="contenedor nav-grid">
 
                 <a class="logo" href="index.html">
                     <h1 class="logo__nombre">Utn<span>Wallet</span></h1>
@@ -25,27 +30,100 @@
 
                 <nav class="navegacion-principal">
                     <a href="#" class="navegacion__enlace">Nosotros</a>
-                    <a href="#" class="navegacion__enlace">Sobre Criptos</a>
-                    <a href="#" class="navegacion__enlace">Iniciar Sesion</a>
-                    <a href="#" class="navegacion__enlace">Registrarse</a>
+                    <a href="#" class="navegacion__enlace">Sobre Criptos</a>        
                 </nav>
 
             </div>
-
         </div>
 
-        <div class="header__texto img-bg">
-            <div class="contenedor bottom">
-                <h2 class="">Crompra y vende criptos de forma sencilla!</h2>
-                <p class="">Ingresar al mundo cripto es simple</p>    
-            
-                <a class="boton" href="#">Ingresar</a>
+        <div class="header__texto img-bg login-conteiner">
+                <div class="container-form sign-up">
+                    <div class="welcome-back">
+                        <div class="message">
+                            <h2>Bienvenido a UtnWallet</h2>
+                            <p>Si ya tienes una cuenta por favor inicia sesión aquí</p>
+                            <button class="sign-up-btn">Iniciar Sesión</button>
+                        </div>
+                    </div>
+                    <form class="form">
+                        <h2 class="create-account">Crear una cuenta</h2>
+                        <div class="icons">
+                            <div class="border-icon">
+                                <i class='bx bxl-instagram-alt'></i>                        
+                            </div>
+                            <div class="border-icon">
+                                <i class='bx bxl-google'></i>
+                            </div>
+                            <div class="border-icon">
+                                <i class='bx bxl-facebook-circle' ></i>
+                            </div>
+    
+                        </div>
+                        <p class="free-account">Crear una cuenta gratis</p>
+                        <input type="text" placeholder="Nombre">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Contraseña">
+                        <input type="button" value="Registrarse">
+                    </form>
+                </div>
 
-            </div>
+                <div class="container-form sign-in">
+                    <form class="form">
+                        <h2 class="create-account">Iniciar Sesión</h2>
+                        <div class="icons">
+                            <div class="border-icon">
+                                <i class='bx bxl-instagram-alt'></i>                        
+                            </div>
+                            <div class="border-icon">
+                                <i class='bx bxl-google'></i>
+                            </div>
+                            <div class="border-icon">
+                                <i class='bx bxl-facebook-circle' ></i>
+                            </div>
+    
+                        </div>
+                        <p class="free-account">¿Aún no tienes cuenta?</p>
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Contraseña">
+                        <input type="button" value="Iniciar Sesión">
+                    </form>
 
+                    <div class="welcome-back">
+                        <div class="message">
+                            <h2>Bienvenido de nuevo</h2>
+                            <p>Si aún no tiene una cuenta por favor regístrese aquí</p>
+                            <button class="sign-in-btn">Registrarse</button>
+                        </div>
+                    </div>
+                </div>
         </div>
 
     </header>
+
+    <main>
+        <div class="servicios contenedor">
+            <section class="servicio">
+                <img src="images/converti.webp" alt="Conversion">
+                <h2>Convertí</h2>
+                <p>Pasar de pesos o dólares a criptos <br> nunca fue tan facil</p>
+            </section>
+
+            <section class="servicio">
+                <img src="images/inverti.webp" alt="Inversion">
+                <h2>Invertí</h2>
+                <p>Generá ganancias pasivas <br> en tus criptos en un solo click</p>
+            </section>
+
+            <section class="servicio">
+                <img src="images/deposita.webp" alt="Deposito">
+                <h2>Depositá y Enviá</h2>
+                <p>Mové tus fondos <br> cuando quieras y al instante</p>
+            </section>
+        </div>
+    </main>
+    <footer>© 2022 UtnWallet. Todos los derechos reservados.</footer>
+
+    <script src="./scripts/script.js" defer></script>
 </body>
 
 </html>
